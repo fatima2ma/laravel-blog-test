@@ -37,7 +37,7 @@
                     </form>
                     @else
                         <a href="/register" class="p-2 text-xs text-gray-500 font-bold uppercase hover:text-gray-800">Register</a>
-                        <a href="/login" class="p-2 text-gray-500 text-xs font-bold uppercase hover:text-gray-800">Log In</a>
+                        <a href="/login" class="p-2 text-gray-500 text-xs font-bold uppercase hover:text-gray-800">LogIn</a>
                 @endauth
 
                 <a href="#news-letter-section" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
