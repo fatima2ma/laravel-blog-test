@@ -24,10 +24,10 @@
                 @auth
                     <x-dropdown>
                         <x-slot name="trigger">
-                            <button class="text-xs font-bold uppercase">Hello,{{ auth()->user()->name }}!</button>
+                            <button class="text-xs font-bold uppercase">Welcome,{{ auth()->user()->name }}!</button>
                         </x-slot>
                         <x-dropdown-item href="/admin/dashboard">Dashboard</x-dropdown-item>
-                        <x-dropdown-item 
+                        <x-dropdown-item
                             href="/admin/posts/create"
                             active="request()->is('/admin/posts/create')">New Post</x-dropdown-item>
                     </x-dropdown>
@@ -65,10 +65,10 @@
 
                             <input id="email" name='email' type="text" placeholder="Your email address"
                                    class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
-                        </div> 
+                        </div>
                         @error('email')
                             <span class="text-xs text-red-500">{{ $message }}</span>
-                        @enderror                 
+                        @enderror
                         </div>
                         <button type="submit"
                                 class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8"
