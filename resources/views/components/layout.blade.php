@@ -24,7 +24,7 @@
                 @auth
                     <x-dropdown>
                         <x-slot name="trigger">
-                            <button class="text-xs font-bold uppercase">Welcome,{{ auth()->user()->name }}!</button>
+                            <button class="text-xs font-bold uppercase">Welcome???????,{{ auth()->user()->name }}!</button>
                         </x-slot>
                         <x-dropdown-item href="/admin/dashboard">Dashboard</x-dropdown-item>
                         <x-dropdown-item
