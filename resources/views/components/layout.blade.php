@@ -24,7 +24,7 @@
                 @auth
                     <x-dropdown>
                         <x-slot name="trigger">
-                            <button class="text-xs font-bold uppercase">Welcome,{{ auth()->user()->name }}!</button>
+                            <button class="text-xs font-bold uppercase">Hello,{{ auth()->user()->name }}!</button>
                         </x-slot>
                         <x-dropdown-item href="/admin/dashboard">Dashboard</x-dropdown-item>
                         <x-dropdown-item 
@@ -37,7 +37,7 @@
                     </form>
                     @else
                         <a href="/register" class="p-2 text-xs text-gray-500 font-bold uppercase hover:text-gray-800">Register</a>
-                        <a href="/login" class="p-2 text-gray-500 text-xs font-bold uppercase hover:text-gray-800">LogIn</a>
+                        <a href="/login" class="p-2 text-gray-500 text-xs font-bold uppercase hover:text-gray-800">Log In!</a>
                 @endauth
 
                 <a href="#news-letter-section" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
